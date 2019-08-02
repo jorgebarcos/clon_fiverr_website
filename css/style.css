@@ -1,6 +1,34 @@
 :root {
-    --verde: #00b30c;
-    --gris1: #353537;
-    --gris2: #eaeaeb;
-    --gris3: #777777;
+	--verde: #00b30c;
+	--gris1: #353537;
+	--gris2: #eaeaeb;
+	--gris3: #777777;
+}
+h1,
+h2,
+h3 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+.titulo {
+	font-weight: 700 !important;
+}
+/* Header */
+.header {
+	background-image: url(../img/hero.jpg);
+	min-height: 30rem;
+	background-size: cover;
+}
+.header .nav-link,
+.header .nav-link:hover {
+	color: white;
+}
+.header .btn-outline-light:hover {
+	color: black !important;
+}
+.buscador {
+	min-height: 25rem;
+}
+.btn-success {
+	background-color: var(--verde);
 }
