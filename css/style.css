@@ -16,11 +16,36 @@ h2 {
 .titulo {
 	font-weight: 700 !important;
 }
+/* Scroll */
+.header-scroll .nav-link {
+	color: var(--gris3) !important;
+}
+.header-scroll {
+	opacity: 0;
+	position: fixed;
+	margin-top: -300px;
+	width: 100%;
+	background-color: white;
+	z-index: 100;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	transition: all .5s ease;
+}
+.header-scroll.activo {
+	margin-top: 0;
+	opacity: 1;
+}
+
 /* Header */
 .header {
 	background-image: url(../img/hero.jpg);
 	min-height: 30rem;
 	background-size: cover;
+}
+.header-scroll .btn-outline-success:hover {
+	color: white !important;
+}
+.header-scroll .btn-outline-success {
+	color: var(--verde) !important;
 }
 .header .nav-link,
 .header .nav-link:hover {
